@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="408dp"
+    android:layout_height="640dp"
+    tools:context=".consultar">
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="559dp"
+        android:background="#5E35B1"
+        android:orientation="horizontal"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/bin_iniciar9"
+        android:layout_width="226dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="448dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
+        android:layout_marginBottom="121dp"
+        android:background="#6510CC"
+        android:drawableLeft="@drawable/magnifier"
+        android:text="Buscar"
+        android:textColor="#F9F9FA"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="82dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="329dp"
+        android:layout_marginRight="329dp"
+        android:layout_marginBottom="565dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backwardarrow"
+        tools:srcCompat="@drawable/backwardarrow" />
+
+    <LinearLayout
+        android:layout_width="172dp"
+        android:layout_height="530dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="227dp"
+        android:layout_marginRight="227dp"
+        android:layout_marginBottom="28dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Titulo:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Autor:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView106"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Cliente:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Usuario:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="Estado del libro:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Estado fisico:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Idioma:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="218dp"
+        android:layout_height="379dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginLeft="178dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="176dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editText37"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText30"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText33"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText35"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="283dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="582dp"
+        android:text="Consultar"
+        android:textColor="#FCFCFC"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

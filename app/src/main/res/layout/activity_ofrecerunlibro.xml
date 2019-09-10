@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="640dp"
+    tools:context=".ofrecerunlibro">
+
+    <Button
+        android:id="@+id/bin_iniciar122"
+        android:layout_width="256dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="495dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginBottom="130dp"
+        android:background="#6510CC"
+        android:drawableLeft="@drawable/pricetag"
+        android:text="Crear libro"
+        android:textColor="#F9F9FA"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView89"
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="600dp"
+        android:background="#5E35B1"
+        android:orientation="horizontal"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="82dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginRight="328dp"
+        android:layout_marginBottom="576dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backwardarrow"
+        tools:srcCompat="@drawable/backwardarrow" />
+
+    <LinearLayout
+        android:layout_width="146dp"
+        android:layout_height="392dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="234dp"
+        android:layout_marginRight="234dp"
+        android:layout_marginBottom="205dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Titulo:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="Autor:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="Estado fisico:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView96"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text="Idioma:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView97"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Edicción:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView98"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="Editorial:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="Año:"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView102"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imagen"
+            android:textColor="#A861FF"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="216dp"
+        android:layout_height="391dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginLeft="183dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="205dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editText55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText56"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText57"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText51"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText52"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText53"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText54"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#A861FF"
+            android:textColorHighlight="#A861FF"
+            android:textColorHint="#A861FF"
+            android:textColorLink="#A861FF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="Seleccionar una imagen"
+            android:textColor="#7F15FF" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="283dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="623dp"
+        android:text="Ofrecer un libro"
+        android:textColor="#FCFCFC"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

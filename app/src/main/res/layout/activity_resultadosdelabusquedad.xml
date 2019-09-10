@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="640dp"
+    android:maxWidth="662dp"
+    android:maxHeight="662dp"
+    android:minWidth="412dp"
+    android:minHeight="412dp"
+    tools:context=".resultadosdelabusquedad">
+
+    <Button
+        android:id="@+id/bin_iniciar9"
+        android:layout_width="198dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginBottom="80dp"
+        android:background="#6510CC"
+        android:text="Confirmar"
+        android:textColor="#F9F9FA"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="540dp"
+        android:background="#5E35B1"
+        android:orientation="horizontal"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="339dp"
+        android:layout_marginRight="339dp"
+        android:layout_marginBottom="559dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backwardarrow"
+        tools:srcCompat="@drawable/backwardarrow" />
+
+    <TableLayout
+        android:layout_width="355dp"
+        android:layout_height="310dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="205dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.684">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="79dp">
+
+            <TextView
+                android:id="@+id/textView83"
+                android:layout_width="148dp"
+                android:layout_height="87dp"
+                android:text="Titulo"
+                android:textColor="#A861FF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView84"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:text="Ver en el mapa"
+                android:textColor="#A861FF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView82"
+                android:layout_width="92dp"
+                android:layout_height="70dp"
+                android:text="Acción"
+                android:textColor="#A861FF"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bin_libro"
+                android:layout_width="100dp"
+                android:layout_height="87dp"
+                android:text="El perfume"
+                android:textColor="#A861FF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="89dp"
+                android:layout_height="46dp"
+                app:srcCompat="@drawable/gmpas" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:background="#00F5F2F2"
+                android:drawableRight="@drawable/rectangulo15"
+                android:text="Disponible" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="314dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="559dp"
+        android:text="Resultadosde la busqueda"
+        android:textColor="#FCFCFC"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
