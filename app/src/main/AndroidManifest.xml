@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".misofertas"></activity>
+        <activity android:name=".misofertas" />
         <activity android:name=".mislibrosguardados" />
         <activity android:name=".resultadosdelabusquedad" />
         <activity android:name=".menuadm" />
