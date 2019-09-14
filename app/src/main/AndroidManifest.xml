@@ -22,6 +22,7 @@
         <activity android:name=".Cambiarcontrasena" />
         <activity android:name=".cambiarcorreo" />
         <activity android:name=".busquedaavanzada" />
+        <activity android:name=".Menu" />
         <activity android:name=".verdetalles" />
         <activity android:name=".buscarlibro" />
         <activity android:name=".recuperarcuenta" />

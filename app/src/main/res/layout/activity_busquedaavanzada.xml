@@ -6,28 +6,6 @@
     android:layout_height="640dp"
     tools:context=".busquedaavanzada">
 
-    <Button
-        android:id="@+id/bin_iniciar44"
-        android:layout_width="235dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="445dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginBottom="123dp"
-        android:background="#6510CC"
-        android:drawableLeft="@drawable/search"
-        android:text="Buscar"
-        android:textColor="#F9F9FA"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
     <TextView
         android:id="@+id/textView32"
         android:layout_width="412dp"
@@ -42,6 +20,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/bin_iniciar44"
+        android:layout_width="235dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="511dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:layout_marginBottom="76dp"
+        android:background="#6510CC"
+        android:drawableLeft="@drawable/search"
+        android:text="Buscar"
+        android:textColor="#F9F9FA"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -74,14 +73,14 @@
         tools:srcCompat="@drawable/backwardarrow" />
 
     <LinearLayout
-        android:layout_width="195dp"
-        android:layout_height="359dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="79dp"
-        android:layout_marginEnd="206dp"
-        android:layout_marginRight="206dp"
-        android:layout_marginBottom="202dp"
+        android:layout_width="173dp"
+        android:layout_height="365dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginRight="210dp"
+        android:layout_marginBottom="177dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -156,12 +155,12 @@
     <LinearLayout
         android:layout_width="195dp"
         android:layout_height="364dp"
-        android:layout_marginStart="204dp"
-        android:layout_marginLeft="204dp"
-        android:layout_marginTop="82dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="194dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="178dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

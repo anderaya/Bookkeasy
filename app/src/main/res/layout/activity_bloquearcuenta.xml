@@ -6,6 +6,21 @@
     android:layout_height="640dp"
     tools:context=".bloquearcuenta">
 
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="559dp"
+        android:background="#5E35B1"
+        android:orientation="horizontal"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
     <Button
         android:id="@+id/bin_iniciar8"
         android:layout_width="198dp"
@@ -24,21 +39,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView66"
-        android:layout_width="412dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="559dp"
-        android:background="#5E35B1"
-        android:orientation="horizontal"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editText14"
