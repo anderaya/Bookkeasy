@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class bloquearcuenta extends AppCompatActivity {
 
+    //  bloquar cuenta
     ImageView regresar;
     Button confirmar;
     @Override
