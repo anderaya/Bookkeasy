@@ -2,35 +2,32 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="408dp"
-    android:layout_height="640dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".consultar">
 
     <TextView
         android:id="@+id/textView77"
-        android:layout_width="412dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="559dp"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="364dp"
         android:background="#5E35B1"
         android:orientation="horizontal"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bin_iniciar9"
         android:layout_width="226dp"
         android:layout_height="71dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginLeft="91dp"
-        android:layout_marginTop="448dp"
-        android:layout_marginEnd="91dp"
-        android:layout_marginRight="91dp"
-        android:layout_marginBottom="121dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
         android:background="#6510CC"
         android:drawableLeft="@drawable/magnifier"
         android:text="Buscar"
@@ -38,19 +35,18 @@
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView20"
-        android:layout_width="82dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="329dp"
-        android:layout_marginRight="329dp"
-        android:layout_marginBottom="565dp"
+        android:layout_width="79dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginRight="241dp"
+        android:layout_marginBottom="376dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,193 +54,203 @@
         app:srcCompat="@drawable/backwardarrow"
         tools:srcCompat="@drawable/backwardarrow" />
 
-    <LinearLayout
-        android:layout_width="172dp"
-        android:layout_height="530dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginLeft="9dp"
-        android:layout_marginTop="82dp"
-        android:layout_marginEnd="227dp"
-        android:layout_marginRight="227dp"
-        android:layout_marginBottom="28dp"
-        android:orientation="vertical"
+    <ScrollView
+        android:layout_width="166dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView79"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:text="Titulo:"
-            android:textColor="#A861FF"
-            android:textSize="24sp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView80"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:text="Autor:"
-            android:textColor="#A861FF"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/editText37"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#A861FF"
+                android:textColorHighlight="#A861FF"
+                android:textColorHint="#A861FF"
+                android:textColorLink="#A861FF"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView106"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:text="Cliente:"
-            android:textColor="#A861FF"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/editText30"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#A861FF"
+                android:textColorHighlight="#A861FF"
+                android:textColorHint="#A861FF"
+                android:textColorLink="#A861FF"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView81"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:text="Usuario:"
-            android:textColor="#A861FF"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/editText31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#A861FF"
+                android:textColorHighlight="#A861FF"
+                android:textColorHint="#A861FF"
+                android:textColorLink="#A861FF"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView82"
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:text="Estado del libro:"
-            android:textColor="#A861FF"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/editText32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#A861FF"
+                android:textColorHighlight="#A861FF"
+                android:textColorHint="#A861FF"
+                android:textColorLink="#A861FF"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView83"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:text="Estado fisico:"
-            android:textColor="#A861FF"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/editText33"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#A861FF"
+                android:textColorHighlight="#A861FF"
+                android:textColorHint="#A861FF"
+                android:textColorLink="#A861FF"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView84"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:text="Idioma:"
-            android:textColor="#A861FF"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/editText34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#A861FF"
+                android:textColorHighlight="#A861FF"
+                android:textColorHint="#A861FF"
+                android:textColorLink="#A861FF"
+                android:textSize="18sp" />
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/editText35"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#A861FF"
+                android:textColorHighlight="#A861FF"
+                android:textColorHint="#A861FF"
+                android:textColorLink="#A861FF"
+                android:textSize="18sp" />
 
-    <LinearLayout
-        android:layout_width="218dp"
-        android:layout_height="379dp"
-        android:layout_marginStart="178dp"
-        android:layout_marginLeft="178dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="176dp"
-        android:orientation="vertical"
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="130dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        android:layout_marginBottom="82dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/editText37"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="#A861FF"
-            android:textColorHighlight="#A861FF"
-            android:textColorHint="#A861FF"
-            android:textColorLink="#A861FF"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/editText30"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="#A861FF"
-            android:textColorHighlight="#A861FF"
-            android:textColorHint="#A861FF"
-            android:textColorLink="#A861FF"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/editText31"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="#A861FF"
-            android:textColorHighlight="#A861FF"
-            android:textColorHint="#A861FF"
-            android:textColorLink="#A861FF"
-            android:textSize="18sp" />
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/editText32"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="#A861FF"
-            android:textColorHighlight="#A861FF"
-            android:textColorHint="#A861FF"
-            android:textColorLink="#A861FF"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/textView79"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Titulo:"
+                android:textColor="#A861FF"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/editText33"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="#A861FF"
-            android:textColorHighlight="#A861FF"
-            android:textColorHint="#A861FF"
-            android:textColorLink="#A861FF"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/textView80"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Autor:"
+                android:textColor="#A861FF"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/editText34"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="#A861FF"
-            android:textColorHighlight="#A861FF"
-            android:textColorHint="#A861FF"
-            android:textColorLink="#A861FF"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/textView106"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Cliente:"
+                android:textColor="#A861FF"
+                android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/editText35"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="#A861FF"
-            android:textColorHighlight="#A861FF"
-            android:textColorHint="#A861FF"
-            android:textColorLink="#A861FF"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/textView81"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Usuario:"
+                android:textColor="#A861FF"
+                android:textSize="24sp" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView82"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado del libro:"
+                android:textColor="#A861FF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView83"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado fisico:"
+                android:textColor="#A861FF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView84"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Idioma:"
+                android:textColor="#A861FF"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <TextView
         android:id="@+id/textView78"
-        android:layout_width="283dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginLeft="112dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="582dp"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="368dp"
         android:text="Consultar"
         android:textColor="#FCFCFC"
-        android:textSize="28sp"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

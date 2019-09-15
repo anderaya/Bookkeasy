@@ -16,7 +16,7 @@ public class busquedaavanzada extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_busquedaavanzada);
 
-        regresar=(ImageView) findViewById(R.id.imageView12);
+        regresar=(ImageView) findViewById(R.id.imageView14);
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

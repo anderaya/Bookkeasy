@@ -2,52 +2,49 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="408dp"
-    android:layout_height="640dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".misofertas">
-
-    <Button
-        android:id="@+id/bin_iniciar11"
-        android:layout_width="198dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="106dp"
-        android:layout_marginLeft="106dp"
-        android:layout_marginTop="476dp"
-        android:layout_marginEnd="107dp"
-        android:layout_marginRight="107dp"
-        android:layout_marginBottom="104dp"
-        android:background="#6510CC"
-        android:text="Confirmar"
-        android:textColor="#F9F9FA"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView105"
-        android:layout_width="412dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="559dp"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="360dp"
         android:background="#5E35B1"
         android:orientation="horizontal"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bin_iniciar11"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="#6510CC"
+        android:text="Confirmar"
+        android:textColor="#F9F9FA"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView33"
-        android:layout_width="82dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="329dp"
-        android:layout_marginRight="329dp"
-        android:layout_marginBottom="565dp"
+        android:layout_width="79dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginRight="241dp"
+        android:layout_marginBottom="367dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,14 +53,14 @@
         tools:srcCompat="@drawable/backwardarrow" />
 
     <TableLayout
-        android:layout_width="355dp"
-        android:layout_height="310dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="121dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginRight="53dp"
-        android:layout_marginBottom="153dp"
+        android:layout_width="278dp"
+        android:layout_height="264dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,15 +72,15 @@
 
             <TextView
                 android:id="@+id/textView108"
-                android:layout_width="148dp"
-                android:layout_height="87dp"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
                 android:text="Titulo"
                 android:textColor="#A861FF"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textView109"
-                android:layout_width="110dp"
+                android:layout_width="89dp"
                 android:layout_height="match_parent"
                 android:text="Ver en el mapa"
                 android:textColor="#A861FF"
@@ -91,8 +88,8 @@
 
             <TextView
                 android:id="@+id/textView110"
-                android:layout_width="92dp"
-                android:layout_height="70dp"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
                 android:text="Acción"
                 android:textColor="#A861FF"
                 android:textSize="20sp" />
@@ -104,8 +101,8 @@
 
             <TextView
                 android:id="@+id/textView111"
-                android:layout_width="148dp"
-                android:layout_height="87dp"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
                 android:text="El perfume"
                 android:textColor="#A861FF"
                 android:textSize="20sp" />
@@ -113,13 +110,13 @@
             <ImageView
                 android:id="@+id/imageView34"
                 android:layout_width="89dp"
-                android:layout_height="46dp"
+                android:layout_height="48dp"
                 app:srcCompat="@drawable/gmpas" />
 
             <Button
                 android:id="@+id/button9"
-                android:layout_width="97dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="#00F5F2F2"
                 android:drawableRight="@drawable/rectangulo15"
                 android:text="En posesión" />
@@ -137,19 +134,20 @@
 
     <TextView
         android:id="@+id/textView107"
-        android:layout_width="229dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginLeft="112dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="582dp"
+        android:layout_width="181dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="367dp"
         android:text="Mis ofertas"
         android:textColor="#FCFCFC"
-        android:textSize="28sp"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
