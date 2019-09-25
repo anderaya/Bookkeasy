@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "867982323165-fiht8g12q945dh7r0g3mck1em5oi5ash.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookkeasy",
+            "certificate_hash": "5f36552ef85d2f93b592aab7c29a106739bd99f3"
+          }
+        },
+        {
           "client_id": "867982323165-8a7am9i93cdgrimk6qe70s9nmgbn89pc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

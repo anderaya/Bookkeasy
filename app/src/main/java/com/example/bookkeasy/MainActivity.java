@@ -49,13 +49,25 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.sonido);
 
 
+        iniciar= (Button) findViewById(R.id.bin_iniciarss);
+        iniciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sonido.start();
+                Intent intent = new Intent(getApplicationContext(),Menu.class);
+                startActivity(intent);
+
+            }
+        });
 
         //myEditor.putInt("Sonido",0);
 
         //definir sonido
-        sonido = MediaPlayer.create(getApplicationContext(),R.raw.sonido);
+
 
 
         //ir a menu
