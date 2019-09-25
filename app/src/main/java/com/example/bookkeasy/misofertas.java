@@ -20,8 +20,7 @@ public class misofertas extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),Menu.class);
-                startActivity(intent);
+                finish();
             }
         });
         mapa=(ImageView) findViewById(R.id.imageView34);
@@ -37,6 +36,7 @@ public class misofertas extends AppCompatActivity {
         buscarlibro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
                 Intent intent = new Intent(getApplicationContext(),misofertas.class);
                 startActivity(intent);
             }

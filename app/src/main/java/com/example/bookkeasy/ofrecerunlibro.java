@@ -21,8 +21,7 @@ public class ofrecerunlibro extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),Menu.class);
-                startActivity(intent);
+                finish();
             }
         });
         mapa=(Button) findViewById(R.id.button);
@@ -37,6 +36,7 @@ public class ofrecerunlibro extends AppCompatActivity {
         buscarlibro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
                 Intent intent = new Intent(getApplicationContext(),ofrecerunlibro.class);
                 startActivity(intent);
             }

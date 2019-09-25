@@ -30,8 +30,7 @@ public class resultadosdelabusquedad extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),buscarlibro.class);
-                startActivity(intent);
+                finish();
             }
         });
         mapa=(ImageView) findViewById(R.id.imageView28);
@@ -47,6 +46,7 @@ public class resultadosdelabusquedad extends AppCompatActivity {
         buscarlibro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
                 Intent intent = new Intent(getApplicationContext(),resultadosdelabusquedad.class);
                 startActivity(intent);
             }

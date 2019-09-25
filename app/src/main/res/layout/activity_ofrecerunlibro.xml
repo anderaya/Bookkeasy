@@ -6,6 +6,163 @@
     android:layout_height="wrap_content"
     tools:context=".ofrecerunlibro">
 
+    <ScrollView
+        android:layout_width="263dp"
+        android:layout_height="229dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Titulo"
+                android:textColorHint="#A861FF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Titulo"
+                    android:textColor="#A861FF"
+                    android:textColorHighlight="#543080"
+                    android:textColorHint="#A861FF"
+                    android:textColorLink="#543080" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Autor"
+                android:textColorHint="#A861FF"
+                app:passwordToggleTint="#A861FF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Autor"
+                    android:textColor="#A861FF"
+                    android:textColorHighlight="#543080"
+                    android:textColorHint="#A861FF"
+                    android:textColorLink="#543080" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Estado del libro"
+                android:textColorHint="#A861FF"
+                app:passwordToggleTint="#A861FF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Estado del libro"
+                    android:textColor="#A861FF"
+                    android:textColorHighlight="#543080"
+                    android:textColorHint="#A861FF"
+                    android:textColorLink="#543080" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Estado fisico"
+                android:textColorHint="#A861FF"
+                app:passwordToggleTint="#A861FF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Estado fisico"
+                    android:textColor="#A861FF"
+                    android:textColorHighlight="#543080"
+                    android:textColorHint="#A861FF"
+                    android:textColorLink="#543080" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Idioma"
+                android:textColorHint="#A861FF"
+                app:passwordToggleTint="#A861FF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Idioma"
+                    android:textColor="#A861FF"
+                    android:textColorHighlight="#543080"
+                    android:textColorHint="#A861FF"
+                    android:textColorLink="#543080" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Edicción"
+                android:textColorHint="#A861FF"
+                app:boxStrokeColor="#A861FF"
+                app:passwordToggleTint="#A861FF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Edicción"
+                    android:textColor="#A861FF"
+                    android:textColorHighlight="#543080"
+                    android:textColorHint="#A861FF"
+                    android:textColorLink="#543080" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Editorial"
+                android:textColorHint="#A861FF"
+                app:passwordToggleTint="#A861FF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Editorial"
+                    android:textColor="#A861FF"
+                    android:textColorHighlight="#543080"
+                    android:textColorHint="#A861FF"
+                    android:textColorLink="#543080" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Año"
+                android:textColorHint="#A861FF"
+                app:passwordToggleTint="#A861FF">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:hint="Año"
+                    android:textColor="#A861FF"
+                    android:textColorHighlight="#543080"
+                    android:textColorHint="#A861FF"
+                    android:textColorLink="#543080" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
     <TextView
         android:id="@+id/textView89"
         android:layout_width="320dp"
@@ -53,202 +210,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/backwardarrow"
         tools:srcCompat="@drawable/backwardarrow" />
-
-    <ScrollView
-        android:layout_width="125dp"
-        android:layout_height="274dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="179dp"
-        android:layout_marginRight="179dp"
-        android:layout_marginBottom="88dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView91"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="Titulo:"
-                android:textColor="#A861FF"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView92"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="Autor:"
-                android:textColor="#A861FF"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView95"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="Estado fisico:"
-                android:textColor="#A861FF"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView96"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="Idioma:"
-                android:textColor="#A861FF"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView97"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="Edicción:"
-                android:textColor="#A861FF"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView98"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="Editorial:"
-                android:textColor="#A861FF"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView99"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="Año:"
-                android:textColor="#A861FF"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView102"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="Imagen"
-                android:textColor="#A861FF"
-                android:textSize="20sp" />
-        </LinearLayout>
-    </ScrollView>
-
-    <ScrollView
-        android:layout_width="171dp"
-        android:layout_height="297dp"
-        android:layout_marginStart="149dp"
-        android:layout_marginLeft="149dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginBottom="78dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <EditText
-                android:id="@+id/editText53"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="#A861FF"
-                android:textColorHighlight="#A861FF"
-                android:textColorHint="#A861FF"
-                android:textColorLink="#A861FF"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/editText5"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="#A861FF"
-                android:textColorHighlight="#A861FF"
-                android:textColorHint="#A861FF"
-                android:textColorLink="#A861FF"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/editText56"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="#A861FF"
-                android:textColorHighlight="#A861FF"
-                android:textColorHint="#A861FF"
-                android:textColorLink="#A861FF"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/editText57"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="#A861FF"
-                android:textColorHighlight="#A861FF"
-                android:textColorHint="#A861FF"
-                android:textColorLink="#A861FF"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/editText51"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="#A861FF"
-                android:textColorHighlight="#A861FF"
-                android:textColorHint="#A861FF"
-                android:textColorLink="#A861FF"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/editText52"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="#A861FF"
-                android:textColorHighlight="#A861FF"
-                android:textColorHint="#A861FF"
-                android:textColorLink="#A861FF"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/editText54"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="#A861FF"
-                android:textColorHighlight="#A861FF"
-                android:textColorHint="#A861FF"
-                android:textColorLink="#A861FF"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="Seleccionar una imagen"
-                android:textColor="#7F15FF" />
-
-        </LinearLayout>
-    </ScrollView>
 
     <TextView
         android:id="@+id/textView90"

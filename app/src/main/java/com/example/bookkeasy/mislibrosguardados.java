@@ -20,8 +20,7 @@ public class mislibrosguardados extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),Menu.class);
-                startActivity(intent);
+                finish();
             }
         });
         mapa=(ImageView) findViewById(R.id.imageView32);
@@ -37,6 +36,7 @@ public class mislibrosguardados extends AppCompatActivity {
         buscarlibro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
                 Intent intent = new Intent(getApplicationContext(),mislibrosguardados.class);
                 startActivity(intent);
             }

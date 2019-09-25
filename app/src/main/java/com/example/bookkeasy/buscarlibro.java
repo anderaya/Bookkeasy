@@ -42,8 +42,7 @@ public class buscarlibro extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),Menu.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

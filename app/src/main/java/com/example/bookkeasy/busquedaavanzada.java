@@ -20,8 +20,7 @@ public class busquedaavanzada extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),buscarlibro.class);
-                startActivity(intent);
+                finish();
             }
         });
 

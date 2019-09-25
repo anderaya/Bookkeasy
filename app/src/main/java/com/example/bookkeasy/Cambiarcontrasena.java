@@ -20,8 +20,7 @@ public class Cambiarcontrasena extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),configuracion.class);
-                startActivity(intent);
+                finish();
             }
         });
 
@@ -29,8 +28,7 @@ public class Cambiarcontrasena extends AppCompatActivity {
         buscarlibro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),configuracion.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

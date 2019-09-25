@@ -18,8 +18,7 @@ public class verdetalles extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),resultadosdelabusquedad.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

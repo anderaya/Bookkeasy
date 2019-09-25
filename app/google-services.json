@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "867982323165",
+    "firebase_url": "https://bookkeasy-58bca.firebaseio.com",
+    "project_id": "bookkeasy-58bca",
+    "storage_bucket": "bookkeasy-58bca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867982323165:android:7ac8b0cdb80127647c5a34",
+        "android_client_info": {
+          "package_name": "com.example.bookkeasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867982323165-8a7am9i93cdgrimk6qe70s9nmgbn89pc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookkeasy",
+            "certificate_hash": "f51ff0950b13de5ab6423040a3ea17cb5a0f8f45"
+          }
+        },
+        {
+          "client_id": "867982323165-v6fivn7g1blc2nsj79b0ripr413kvqgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaolHF_ohXJ40NW45z6MY05uRyVx-XAJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867982323165-v6fivn7g1blc2nsj79b0ripr413kvqgp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
