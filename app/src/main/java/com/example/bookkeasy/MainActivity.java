@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
+
     }
 
 
@@ -51,15 +52,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         sonido = MediaPlayer.create(getApplicationContext(),R.raw.sonido);
-
-
         iniciar= (Button) findViewById(R.id.bin_iniciarss);
+
         iniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 sonido.start();
-                Intent intent = new Intent(getApplicationContext(),Menu.class);
-                startActivity(intent);
+                //verifica e iniciar activity
+                iniciarss();
+
 
             }
         });
@@ -103,53 +104,61 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private boolean iniciarss(){
+
+    private void iniciarss(){
 
         String contraseña= Contraseña.getText().toString().trim();
         String correo= Correo.getText().toString().trim();
 
 
         if(TextUtils.isEmpty(correo)){
-            Toast.makeText(this,"Se debe ingresar un correo",Toast.LENGTH_LONG).show();
-            return false;
+            Toast.makeText(this,"Falta ingresar un correo",Toast.LENGTH_LONG).show();
+            return ;
         }
         if(TextUtils.isEmpty(contraseña)){
             Toast.makeText(this,"Falta ingresar la contraseña",Toast.LENGTH_LONG).show();
 
-            return false;
+            return ;
         }
 
-        //crear un usuario
-        //creating a new user
-        final boolean[] estado = {false};
+
 
         mAuth.signInWithEmailAndPassword(correo,contraseña).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             private String TAG;
 
+
             @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
+
 
                         if (task.isSuccessful()) {
-                            Toast.makeText(MainActivity.this,"Inicio exitosooooooooooooooo: "+ Correo.getText(),Toast.LENGTH_LONG).show();
-                            estado[0] =true;
+                            Toast.makeText(MainActivity.this,"Se ha iniciado sesión: ",Toast.LENGTH_LONG).show();
+                            finish();
                             FirebaseUser user = mAuth.getCurrentUser();
+                            Intent intent = new Intent(getApplicationContext(), Menu.class);
+                            startActivity(intent);
 
-                        } else {
-                            Toast.makeText(MainActivity.this,"error: "+ Correo.getText(),Toast.LENGTH_LONG).show();
-                            estado[0] =true;
-                            Log.d(TAG, "onComplete: Failed=" + task.getException().getMessage());
+
+                        }else{
+                            Toast.makeText(MainActivity.this,"Correo o contraseña incorrecta ",Toast.LENGTH_LONG).show();
+
+                           // Log.d(TAG, "onComplete: Failed=" + task.getException().getMessage());
+
                         }
 
-                        // ...
+
                     }
                 });
 
 
-        return estado[0];
-
-
     }
+    private boolean estadoo;
 
+    private boolean estado(boolean estado){
+        estadoo=estado;
 
+        return true;
+    }
 }
+
+

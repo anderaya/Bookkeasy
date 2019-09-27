@@ -4,4 +4,52 @@
     <string name="title_activity_maps2">Mapa</string>
     <string name="title_activity_recuperarcuentaaa">recuperarcuentaaa</string>
     <string name="title_activity_prueba">prueba</string>
+
+
+    <string-array name="estadonew">
+        <item>Estdo del libro</item>
+        <item>En posesión</item>
+
+
+    </string-array>
+    <string-array name="estadopedir">
+        <item>Cancelar</item>
+        <item>Pedir</item>
+        <item>Pedido</item>
+    </string-array>
+
+    <string-array name="estadoMislibrosg">
+        <item>En posesión</item>
+        <item>Pedido</item>
+        <item>Devolver</item>
+        <item>Devolviendo</item>
+        <item>Cancelar</item>
+    </string-array>
+    <string-array name="estadoMisofertas">
+        <item>En posesión</item>
+        <item>Prestar</item>
+        <item>Prestado</item>
+        <item>Cancelar</item>
+
+    </string-array>
+
+    <string-array name="estadofisico">
+        <item>Estado fisico</item>
+        <item>Nuevo</item>
+        <item>En buen estado</item>
+        <item>Deteriorado</item>
+        <item>Dañado</item>
+
+    </string-array>
+    <string-array name="idioma">
+        <item>Idioma</item>
+        <item>Español</item>
+        <item>Ingles</item>
+        <item>Frances</item>
+        <item>Otro</item>
+
+    </string-array>
+
+
 </resources>
+
