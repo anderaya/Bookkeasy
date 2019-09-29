@@ -167,7 +167,6 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         tvLongi = String.valueOf(location.getLongitude());
         tvLati = String.valueOf(location.getLatitude());
 
-        Toast.makeText(MapsActivity2.this,"coordenadas "+tvLongi,Toast.LENGTH_LONG).show();
     }
 
 

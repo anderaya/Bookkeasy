@@ -166,9 +166,10 @@ public class registrar extends AppCompatActivity implements  LocationListener{
                         if (task.isSuccessful()) {
                             finish();
                             FirebaseUser user = mAuth.getCurrentUser();
+                            setRegistrarUsuario(usuario,correo,tvLati,tvLongi);
                             Intent intent = new Intent(getApplicationContext(), Menu.class);
                             startActivity(intent);
-                            setRegistrarUsuario(usuario,correo,tvLati,tvLongi);
+
 
 
 
@@ -209,6 +210,7 @@ public class registrar extends AppCompatActivity implements  LocationListener{
                             us.setUsuario(ds.child("usuario").getValue().toString());
                             us.setLongitud(ds.child("longitud").getValue().toString());
                             us.setLatitud(ds.child("latitud").getValue().toString());
+                            us.setTipouser(ds.child("tipouser").getValue().toString());
 
 
                             return;

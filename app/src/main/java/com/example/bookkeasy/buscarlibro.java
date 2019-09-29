@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,7 @@ public class buscarlibro extends AppCompatActivity {
     private DatabaseReference databaseReference;
     private FirebaseAuth mAuth;
     public usuarioActivo us=new usuarioActivo();
+    private MainActivity confi;
 
     public String getTituloBuscado() {
         return tituloBuscado;
@@ -37,7 +39,8 @@ public class buscarlibro extends AppCompatActivity {
 
     static String tituloBuscado,autorBuscado;
     private EditText Titulo,Autor;
-
+    private TextView barra;
+    private String toll;
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -50,10 +53,13 @@ public class buscarlibro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buscarlibro);
         mAuth = FirebaseAuth.getInstance();
-
         Titulo=findViewById(R.id.editText8);
         Autor=findViewById(R.id.editText9);
 
+        barra=findViewById(R.id.textView13);
+        int dfecto= Color.argb(255,94,53,177);
+        toll=confi.myPreferences.getString("color",dfecto+"");
+        barra.setBackgroundColor(Integer.parseInt(toll));
 
 
 
@@ -90,8 +96,14 @@ public class buscarlibro extends AppCompatActivity {
 
         tituloBuscado= Titulo.getText().toString().trim();
         autorBuscado= Autor.getText().toString().trim();
-        Intent intent = new Intent(getApplicationContext(),resultadosdelabusquedad.class);
-        startActivity(intent);
+        if(!tituloBuscado.isEmpty()|!autorBuscado.isEmpty()){
+            Intent intent = new Intent(getApplicationContext(),resultadosdelabusquedad.class);
+            startActivity(intent);
+
+        }else{
+            Toast.makeText(buscarlibro.this,"Es necesario proporcionar alguno de los dos parametros ",Toast.LENGTH_LONG).show();
+        }
+
 
 
     }

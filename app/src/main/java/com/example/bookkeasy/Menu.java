@@ -3,8 +3,10 @@ package com.example.bookkeasy;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,20 +15,24 @@ import android.widget.Toast;
 public class Menu extends AppCompatActivity {
    TextView buscarlibro,ofrecer,misofertas,mislibros,configruacion,cerrarsesion;
     private MediaPlayer sonido;
+    private MainActivity confi;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-
-
         sonido = MediaPlayer.create(getApplicationContext(), R.raw.sonido);
         buscarlibro=(TextView)findViewById(R.id.bin_registrarr);
         buscarlibro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sonido.start();
+
+                if(confi.myPreferences.getString("sonido","off").equals("on")) {
+                    sonido.start();
+                }
+
                 Intent intent = new Intent(getApplicationContext(),buscarlibro.class);
                 startActivity(intent);
             }
@@ -36,7 +42,9 @@ public class Menu extends AppCompatActivity {
         ofrecer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sonido.start();
+                if(confi.myPreferences.getString("sonido","off").equals("on")) {
+                    sonido.start();
+                }
                 Intent intent = new Intent(getApplicationContext(),ofrecerunlibro.class);
                 startActivity(intent);
             }
@@ -47,7 +55,9 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                sonido.start();
+                if(confi.myPreferences.getString("sonido","off").equals("on")) {
+                    sonido.start();
+                }
                 Intent intent = new Intent(getApplicationContext(),misofertas.class);
                 startActivity(intent);
             }
@@ -57,7 +67,9 @@ public class Menu extends AppCompatActivity {
         mislibros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sonido.start();
+                if(confi.myPreferences.getString("sonido","off").equals("on")) {
+                    sonido.start();
+                }
                 Intent intent = new Intent(getApplicationContext(),mislibrosguardados.class);
                 startActivity(intent);
             }
@@ -67,7 +79,9 @@ public class Menu extends AppCompatActivity {
         configruacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sonido.start();
+                if(confi.myPreferences.getString("sonido","off").equals("on")) {
+                    sonido.start();
+                }
                 Intent intent = new Intent(getApplicationContext(),configuracion.class);
                 startActivity(intent);
 
@@ -78,7 +92,9 @@ public class Menu extends AppCompatActivity {
         cerrarsesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sonido.start();
+                if(confi.myPreferences.getString("sonido","off").equals("on")) {
+                    sonido.start();
+                }
                 finish();
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);

@@ -6,12 +6,12 @@ public class Usuario {
 
     }
 
-    public Usuario(String usuario, String correo,String longitud,String latitud,String tipoUser) {
+    public Usuario(String usuario, String correo,String longitud,String latitud,String tipouser) {
         this.usuario = usuario;
         this.correo = correo;
         this.longitud=longitud;
         this.latitud=latitud;
-        this.tipoUser=tipoUser;
+        this.tipouser=tipouser;
 
     }
 
@@ -19,12 +19,12 @@ public class Usuario {
     private String contraseña;
     private String correo;;
 
-    public String getTipoUser() {
-        return tipoUser;
+    public String getTipouser() {
+        return tipouser;
     }
 
-    public void setTipoUser(String tipoUser) {
-        this.tipoUser = tipoUser;
+    public void setTipouser(String tipoUser) {
+        this.tipouser = tipoUser;
     }
 
     private String tipoUser;
@@ -47,7 +47,7 @@ public class Usuario {
 
     private String longitud;
     private String latitud;
-
+    private String tipouser;
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }

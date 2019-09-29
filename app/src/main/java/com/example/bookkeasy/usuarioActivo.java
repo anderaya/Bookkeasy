@@ -1,7 +1,10 @@
 package com.example.bookkeasy;
 
 public class usuarioActivo {
-    static String correo,usuario,latitud,longitud;
+    static String correo;
+    static String usuario;
+    static String latitud;
+    static String longitud;
 
     public static String getCorreo() {
         return correo;
@@ -34,6 +37,17 @@ public class usuarioActivo {
     public static void setLongitud(String longitud) {
         usuarioActivo.longitud = longitud;
     }
+
+    public static String getTipouser() {
+        return tipouser;
+    }
+
+    public static void setTipouser(String tipouser) {
+        usuarioActivo.tipouser = tipouser;
+    }
+
+    static String tipouser;
+
 }
 
 

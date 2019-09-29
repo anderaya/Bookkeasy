@@ -188,6 +188,7 @@
         android:layout_marginEnd="31dp"
         android:layout_marginRight="31dp"
         android:layout_marginBottom="303dp"
+        android:background="#006B2828"
         android:drawableRight="@drawable/search"
         android:ems="10"
         android:inputType="textPersonName"

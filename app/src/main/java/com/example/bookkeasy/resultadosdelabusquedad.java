@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,9 @@ public class resultadosdelabusquedad extends AppCompatActivity {
     TextView detalles;
     private DatabaseReference databaseReference;
     buscarlibro bl=new buscarlibro();
+    private MainActivity confi;
+    private TextView barra;
+    private String toll;
 
     int contador;
 
@@ -35,7 +39,10 @@ public class resultadosdelabusquedad extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultadosdelabusquedad);
-
+        barra=findViewById(R.id.textView74);
+        int dfecto= Color.argb(255,94,53,177);
+        toll=confi.myPreferences.getString("color",dfecto+"");
+        barra.setBackgroundColor(Integer.parseInt(toll));
 
 
         detalles=(TextView) findViewById(R.id.bin_data);

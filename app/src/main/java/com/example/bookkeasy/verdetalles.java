@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -26,6 +27,9 @@ public class verdetalles extends AppCompatActivity {
     ImageView regresar;
     int count;
     public usuarioActivo us=new usuarioActivo();
+    private MainActivity confi;
+    private TextView barra;
+    private String toll;
 
 
 
@@ -33,6 +37,10 @@ public class verdetalles extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verdetalles);
+        barra=findViewById(R.id.textView6);
+        int dfecto= Color.argb(255,94,53,177);
+        toll=confi.myPreferences.getString("color",dfecto+"");
+        barra.setBackgroundColor(Integer.parseInt(toll));
 
         titulo=findViewById(R.id.textView18);
         autor=findViewById(R.id.textView19);

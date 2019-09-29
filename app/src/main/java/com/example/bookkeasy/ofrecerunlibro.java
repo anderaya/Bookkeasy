@@ -3,6 +3,7 @@ package com.example.bookkeasy;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,12 +22,20 @@ public class ofrecerunlibro extends AppCompatActivity {
 
     private String TAG;
     private DatabaseReference databaseReference;
+    private MainActivity confi;
+    private TextView barra;
+    private String toll;
 
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ofrecerunlibro);
+        barra=findViewById(R.id.textView89);
+        int dfecto= Color.argb(255,94,53,177);
+        toll=confi.myPreferences.getString("color",dfecto+"");
+        barra.setBackgroundColor(Integer.parseInt(toll));
+
 
         Titulo=findViewById(R.id.id_titulo);
         Autor=findViewById(R.id.id_autor);
