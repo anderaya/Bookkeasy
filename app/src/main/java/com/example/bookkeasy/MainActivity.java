@@ -21,6 +21,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import static com.example.bookkeasy.R.raw.sonido;
 
@@ -104,11 +109,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public usuarioActivo us=new usuarioActivo();
+    private DatabaseReference databaseReference;
 
     private void iniciarss(){
 
+
+
         String contraseña= Contraseña.getText().toString().trim();
         String correo= Correo.getText().toString().trim();
+        us.setCorreo(correo);
 
 
         if(TextUtils.isEmpty(correo)){
@@ -124,7 +134,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         mAuth.signInWithEmailAndPassword(correo,contraseña).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-            private String TAG;
 
 
             @Override
@@ -132,11 +141,43 @@ public class MainActivity extends AppCompatActivity {
 
 
                         if (task.isSuccessful()) {
-                            Toast.makeText(MainActivity.this,"Se ha iniciado sesión: ",Toast.LENGTH_LONG).show();
+                            Toast.makeText(MainActivity.this,"Se ha iniciado sesión",Toast.LENGTH_LONG).show();
                             finish();
                             FirebaseUser user = mAuth.getCurrentUser();
                             Intent intent = new Intent(getApplicationContext(), Menu.class);
                             startActivity(intent);
+                            databaseReference= FirebaseDatabase.getInstance().getReference();
+
+                            databaseReference.child("usuario").addValueEventListener(new ValueEventListener() {
+
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                                    if(dataSnapshot.exists()){
+
+                                        dataSnapshot.getChildren();
+
+                                        for(DataSnapshot ds:dataSnapshot.getChildren()){
+
+                                            //mejorar para obtener multiples resultados
+                                            if(ds.child("correo").getValue().toString().equals(us.getCorreo())) {
+
+                                                us.setUsuario(ds.child("usuario").getValue().toString());
+                                                us.setLongitud(ds.child("longitud").getValue().toString());
+                                                us.setLatitud(ds.child("latitud").getValue().toString());
+
+
+                                                return;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                                }
+                            });
 
 
                         }else{
@@ -152,13 +193,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    private boolean estadoo;
 
-    private boolean estado(boolean estado){
-        estadoo=estado;
 
-        return true;
-    }
 }
 
 

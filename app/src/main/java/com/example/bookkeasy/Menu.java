@@ -7,7 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 
 public class Menu extends AppCompatActivity {
@@ -18,6 +18,9 @@ public class Menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+
+
         sonido = MediaPlayer.create(getApplicationContext(), R.raw.sonido);
         buscarlibro=(TextView)findViewById(R.id.bin_registrarr);
         buscarlibro.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +70,7 @@ public class Menu extends AppCompatActivity {
                 sonido.start();
                 Intent intent = new Intent(getApplicationContext(),configuracion.class);
                 startActivity(intent);
+
             }
         });
 
@@ -78,6 +82,7 @@ public class Menu extends AppCompatActivity {
                 finish();
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
+
             }
         });
     }

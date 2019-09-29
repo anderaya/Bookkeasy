@@ -19,7 +19,7 @@ public class configuracion extends AppCompatActivity {
     Button buscarlibro,correo,cuenta,colorr;
     Switch sonido;
 
-    public SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+    //public SharedPreferences myPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,8 +77,8 @@ public class configuracion extends AppCompatActivity {
                 //// acceder al sonidooooooooooooo
 
             if (Switch.AUTOFILL_TYPE_TOGGLE==0) {
-                myPreferences.edit().remove("Sonido");
-                myPreferences.edit().putInt("Sonido", 1);
+               // myPreferences.edit().remove("Sonido");
+                //myPreferences.edit().putInt("Sonido", 1);
             }
 
             }

@@ -69,10 +69,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView49"
+            android:id="@+id/textView54"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="                Autor"
+            android:text="                Titulo"
             android:textColor="#A861FF"
             android:textSize="26sp" />
 
@@ -89,10 +89,10 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textView54"
+            android:id="@+id/textView49"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="                Titulo"
+            android:text="                Autor"
             android:textColor="#A861FF"
             android:textSize="26sp" />
 

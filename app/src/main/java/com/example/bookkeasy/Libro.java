@@ -2,6 +2,7 @@ package com.example.bookkeasy;
 
 public class Libro {
 
+    //se utiliza para crear un libro
 
     private String titulo;
     private String autor;
@@ -13,24 +14,16 @@ public class Libro {
     private String año;
     private String usuario;
     private String cliente;
-
+    private String longitud;
+    private String latitud;
     public Libro() {
     }
 
 
-    public Libro(String titulo, String autor, String estadodellibro, String estadofisico, String idioma, String ediccion, String editorial, String año) {
-        this.titulo = titulo;
-        this.autor = autor;
-        this.estadodellibro = estadodellibro;
-        this.estadofisico = estadofisico;
-        this.idioma = idioma;
-        this.ediccion = ediccion;
-        this.editorial = editorial;
-        this.año = año;
-    }
 
 
-    public Libro(String titulo, String autor, String estadodellibro, String estadofisico, String idioma, String ediccion, String editorial, String año, String usuario, String cliente) {
+
+    public Libro(String titulo, String autor, String estadodellibro, String estadofisico, String idioma, String ediccion, String editorial, String año, String usuario, String cliente,String longitud,String latitud) {
         this.titulo = titulo;
         this.autor = autor;
         this.estadodellibro = estadodellibro;
@@ -41,6 +34,8 @@ public class Libro {
         this.año = año;
         this.usuario = usuario;
         this.cliente = cliente;
+        this.longitud = longitud;
+        this.latitud = latitud;
     }
 
     public void setTitulo(String titulo) {
@@ -121,5 +116,21 @@ public class Libro {
 
     public String getCliente() {
         return cliente;
+    }
+
+    public String getLongitud() {
+        return longitud;
+    }
+
+    public void setLongitud(String longitud) {
+        this.longitud = longitud;
+    }
+
+    public String getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(String latitud) {
+        this.latitud = latitud;
     }
 }

@@ -60,6 +60,7 @@ public class ofrecerunlibro extends AppCompatActivity {
 
 
     public String titulo,autor,estadolib,estadof,idioma,ediccion,editorial,año;
+    public usuarioActivo us=new usuarioActivo();
 
     public void crearlibro(){
         titulo=Titulo.getEditText().getText().toString();
@@ -81,7 +82,7 @@ public class ofrecerunlibro extends AppCompatActivity {
 
         if(!titulo.isEmpty()&& !autor.isEmpty()){
             String id = databaseReference.push().getKey();
-            Libro user = new Libro(titulo, autor, estadolib, estadof, idioma, ediccion, editorial, año);
+            Libro user = new Libro(titulo, autor, estadolib, estadof, idioma, ediccion, editorial, año,us.getUsuario(),"",us.getLongitud(),us.getLatitud());
             databaseReference.child("libro").child(id).setValue(user);
             Toast.makeText(ofrecerunlibro.this, "Se ha creado el libro ", Toast.LENGTH_LONG).show();
 

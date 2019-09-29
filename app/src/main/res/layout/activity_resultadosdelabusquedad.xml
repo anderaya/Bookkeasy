@@ -105,7 +105,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/bin_libro"
+                android:id="@+id/bin_data"
                 android:layout_width="114dp"
                 android:layout_height="match_parent"
                 android:text="El perfume"
