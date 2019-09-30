@@ -41,6 +41,8 @@ public class Eliminarcuenta extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+                finish();
+                finish();
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
             }

@@ -40,6 +40,7 @@ public class registrar extends AppCompatActivity implements  LocationListener{
     //instancia de firebase
     private FirebaseAuth mAuth;
     private EditText Usuario, Contraseña,Correo,Direccion;
+    private MainActivity confi;
 
     private MediaPlayer sonido;
 
@@ -68,8 +69,7 @@ public class registrar extends AppCompatActivity implements  LocationListener{
             @Override
             public void onClick(View view) {
                 finish();
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
+
             }
         });
 
@@ -78,7 +78,9 @@ public class registrar extends AppCompatActivity implements  LocationListener{
         registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               sonido.start();
+                if(confi.myPreferences.getString("sonido","off").equals("on")) {
+                    sonido.start();
+                }
                registrarUsuario();
 
             }

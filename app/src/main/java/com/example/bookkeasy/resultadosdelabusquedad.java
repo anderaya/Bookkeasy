@@ -2,8 +2,11 @@ package com.example.bookkeasy;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,7 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class resultadosdelabusquedad extends AppCompatActivity {
+public class resultadosdelabusquedad extends AppCompatActivity  {
 
     static int seleccionado;
     ImageView regresar,mapa;
@@ -43,6 +48,10 @@ public class resultadosdelabusquedad extends AppCompatActivity {
         int dfecto= Color.argb(255,94,53,177);
         toll=confi.myPreferences.getString("color",dfecto+"");
         barra.setBackgroundColor(Integer.parseInt(toll));
+        CheckPermission();
+
+//pedir permiso ubicación
+
 
 
         detalles=(TextView) findViewById(R.id.bin_data);
@@ -99,6 +108,8 @@ public class resultadosdelabusquedad extends AppCompatActivity {
         mapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 Intent intent = new Intent(getApplicationContext(),MapsActivity2.class);
                 startActivity(intent);
             }
@@ -128,5 +139,10 @@ public class resultadosdelabusquedad extends AppCompatActivity {
         });
     }
 
+    public void CheckPermission() {
+        if (ContextCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION, android.Manifest.permission.ACCESS_COARSE_LOCATION}, 101);
+        }
+    }
 
 }
