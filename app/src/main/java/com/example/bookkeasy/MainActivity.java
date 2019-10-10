@@ -74,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
                 //verifica e iniciar activity
                 iniciarss();
+
+
             }
         });
 
@@ -105,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         //relacionar id del layout
         Contraseña = (EditText)findViewById(R.id.editText);
         Correo =(EditText)findViewById(R.id.editText2);
+
 
     }
 
@@ -152,7 +155,19 @@ public class MainActivity extends AppCompatActivity {
                                                 us.setLongitud(ds.child("longitud").getValue().toString());
                                                 us.setLatitud(ds.child("latitud").getValue().toString());
                                                 us.setTipouser(ds.child("tipouser").getValue().toString());
+
+
+                                                if(ds.child("tipouser").getValue().toString().equals("admn")){
+                                                    finish();
+                                                    Intent intent = new Intent(getApplicationContext(), menuadm.class);
+                                                    startActivity(intent);
+                                                }else{
+                                                    finish();
+                                                    Intent intent = new Intent(getApplicationContext(), Menu.class);
+                                                    startActivity(intent);
+                                                }
                                                 return;
+
                                             }
                                         }
                                     }
@@ -163,8 +178,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
                             });
-                            Intent intent = new Intent(getApplicationContext(), Menu.class);
-                            startActivity(intent);
+
+
 
 
                         }else{
@@ -177,10 +192,6 @@ public class MainActivity extends AppCompatActivity {
                 });
 
     }
-
-
-
-
 
 
 
